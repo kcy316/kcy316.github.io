@@ -25,5 +25,16 @@
     var tb = document.querySelector('.theme-btn');
     if (lb) lb.addEventListener('click', function () { lang = lang === 'ko' ? 'en' : 'ko'; set('lang', lang); apply(); });
     if (tb) tb.addEventListener('click', function () { theme = theme === 'dark' ? 'light' : 'dark'; set('theme', theme); apply(); });
+
+    // Copy email to clipboard
+    var cb = document.querySelector('.copy-btn');
+    if (cb) cb.addEventListener('click', function () {
+      var label = cb.innerHTML;
+      function done() {
+        cb.innerHTML = '<span class="en">Copied!</span><span class="ko">복사됨!</span>';
+        setTimeout(function () { cb.innerHTML = label; }, 1500);
+      }
+      if (navigator.clipboard) navigator.clipboard.writeText(cb.getAttribute('data-copy')).then(done, function () {});
+    });
   });
 })();

@@ -20,7 +20,7 @@ a{color:inherit;text-decoration:none}
 
 /* HERO (home) */
 .hero{display:flex;align-items:center;gap:36px;padding:64px 0 52px;border-bottom:1px solid var(--line)}
-.avatar{width:148px;height:148px;border-radius:50%;flex-shrink:0;background:var(--avatar);position:relative;overflow:hidden;
+.avatar{width:140px;height:180px;border-radius:8px;flex-shrink:0;background:var(--avatar);position:relative;overflow:hidden;
   display:grid;place-items:center;font-size:40px;font-weight:600;color:var(--muted);letter-spacing:.02em}
 .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero h1{font-size:34px;font-weight:700;letter-spacing:-.03em;line-height:1.15}
@@ -41,7 +41,7 @@ section{padding-top:48px}
 .label{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
   padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:24px}
 
-.entry{display:grid;grid-template-columns:1fr auto;column-gap:24px;margin-bottom:26px}
+.entry{display:grid;grid-template-columns:1fr auto;column-gap:24px;margin-bottom:18px}
 .entry:last-child{margin-bottom:0}
 .entry h3{font-size:16.5px;font-weight:600;letter-spacing:-.01em}
 .entry .role{color:var(--sub);font-size:14.5px;margin-top:1px}
@@ -91,7 +91,7 @@ footer{max-width:820px;margin:0 auto;padding:24px;font-family:var(--mono);font-s
   .menu{gap:14px;font-size:13px}
   .brand{display:none}
   .hero{flex-direction:column;align-items:flex-start;gap:22px;padding:44px 0 40px}
-  .avatar{width:112px;height:112px;font-size:30px}
+  .avatar{width:105px;height:135px;font-size:30px}
   .hero h1{font-size:28px}
   .entry,.list li{grid-template-columns:1fr}
   .entry .date,.list .date{grid-row:1;padding:0 0 2px}
@@ -156,3 +156,12 @@ html:not([data-lang="ko"]) .lang-btn [data-l="en"],html[data-lang="ko"] .lang-bt
 .tag-done{border:1px solid var(--line);color:var(--muted)}
 
 html{scroll-behavior:smooth}
+
+/* contact email in hero */
+.contact{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:14px}
+.contact svg{width:15px;height:15px;color:var(--muted);flex-shrink:0}
+.contact a{color:var(--text);font-family:var(--mono);font-size:13.5px;border-bottom:1px solid var(--line)}
+.contact a:hover{color:var(--accent);border-color:var(--accent)}
+.copy-btn{font:inherit;font-size:11.5px;background:none;border:1px solid var(--line);color:var(--muted);border-radius:5px;
+  padding:1px 8px;cursor:pointer;transition:color .15s,border-color .15s}
+.copy-btn:hover{color:var(--text);border-color:var(--muted)}
