@@ -147,14 +147,6 @@ html:not([data-lang="ko"]) .lang-btn [data-l="en"],html[data-lang="ko"] .lang-bt
 }
 .ko-sub{font-family:Pretendard,sans-serif;font-size:15px;color:var(--muted);font-weight:500;margin-left:10px;letter-spacing:0}
 
-/* education status in hero */
-.hero .now{display:flex;flex-direction:column;gap:6px;margin-top:14px}
-.edu{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.edu .when{font-family:var(--mono);font-size:12px;color:var(--muted)}
-.tag-now,.tag-done{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:2px 7px;border-radius:4px;white-space:nowrap;line-height:1.5}
-.tag-now{background:var(--accent);color:var(--bg)}
-.tag-done{border:1px solid var(--line);color:var(--muted)}
-
 html{scroll-behavior:smooth}
 
 /* contact email in hero */
